@@ -13,36 +13,46 @@ ALO-BOT is a computer vision-based automation tool designed for **Albion Online*
 
 ## 🛠️ Prerequisites
 
-*   Python 3.8+
-*   A CUDA-capable GPU is recommended for real-time performance.
+* Python 3.8+
+* A CUDA-capable GPU is recommended for real-time performance.
 
 ## 📦 Installation
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
 
-    ```bash
-    git clone <repository-url>
-    cd ALO-BOT
-    ```
+   ```bash
+   git clone <repository-url>
+   cd ALO-BOT
+   ```
+2. **Set up the Virtual Environment:**
+   Create a virtual environment named `.venv`:
 
-2.  **Set up the Virtual Environment:**
-    This project includes a `venv` directory. You should activate it before running the scripts.
+   ```bash
+   python -m venv .venv
+   ```
 
-    *   **Windows:**
-        ```bash
-        .\venv\Scripts\activate
-        ```
-    *   **Mac/Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
+   Activate it:
 
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+   * **Windows:**
 
-    *(Note: You may need to install PyTorch separately depending on your system configuration to enable GPU support.)*
+     ```bash
+     .\.venv\Scripts\activate
+
+     or
+     .\venv\Scripts\activate
+     ```
+   * **Mac/Linux:**
+
+     ```bash
+     source .venv/bin/activate
+     ```
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   *(Note: You may need to install PyTorch separately depending on your system configuration to enable GPU support.)*
 
 ## 💻 Usage
 
